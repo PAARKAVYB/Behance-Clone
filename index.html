@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bēhance</title>
+    <link rel="icon" type="image/jpg" href="img/icon-logo.jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arial:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <script src="script.js"></script>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <header class="header">
+        <div style="min-width: 100%" class="container">
+            <nav class="navbar" style="border-bottom: 1px solid #ccc; width: 100%;">
+                <div class="navbar-left">
+                    <a href="#" class="logo">Bēhance</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Explore <i class="fa fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Search & Explore</a>
+                            <a href="#">Curated Galleries</a>
+                            <hr>
+                            <a class="p" href="#">Best of Behance</a>
+                            <a href="#">Graphic Design</a>
+                            <a href="#">Illustration</a>
+                            <a href="#">Photography</a>
+                            <a href="#">UI/UX</a>
+                            <a href="#">3D Art</a>
+                        </div>
+                    </li>
+                    <a href="#">Assets</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Behance <span class="pro-badge">PRO</span></a>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Hire Freelancers <i class="fa fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#"><img src="./img/icon.png" width="24" height="24" /> Hiring on Behance</a>
+                            <a href="#"><img src="./img/search.png" width="24" height="24" /> Find Creatives </a>
+                            <a href="#"><img src="./img/project.png" width="24" height="24" /> My Freelance Projects </a>
+                            <a href="#"><img src="./img/new.png" width="24" height="24" /> New Freelance Projects </a>
+                            <hr>
+                            <a class="p" href="#">Graphic Designer</a>
+                            <a href="#">Brand Designer</a>
+                            <a href="#">UI/UX Designer</a>
+                            <a href="#">Illustrators</a>
+                            <a href="#">Logo Designers</a>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="navbar-right">
+                    <button class="icon"><img src="./img/noti.png" width="24" height="24" />
+                    <button class="login">Log In</button>
+                    <button class="signup">Sign Up</button>
+                    <div class="brand-logo"><img src="./img/adobe.png" width="24" height="24" /> Adobe </div>
+                </div>
+                <script src="script.js"></script>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <div class="header" style="margin-left: 25px; margin-right: 15px; padding: 10px 25px;">
+        
+        <div style="min-width: 100%" class="container1">
+            <div class="filter-button"><img class="fil-img" src="img/fil.png" width="20" height="20"> Filter</div>
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" id="searchInput" onkeyup="showSuggestions(this.value)" placeholder="Search the creative world at work" class="search-value">
+            <button class="search-image"><i class="fa fa-image"></i> Search by Image</button>
+            <div id="suggestions" class="suggestions"> <script src="suggestions.js"></script> </div>
+        </div>
+        <div class="rec">
+            <select id="sortOptions" onchange="sortImages()">
+            <option value="recommended">Recommended</option>
+            <option value="likes">Most Liked</option>
+            <option value="views">Most Viewed</option>
+            </select>
+        </div>
+    </div>
+   </div>
+
+
+    <div id="images" class="thumbnail-section">
+        <div class="thumbnail" data-likes="467" data-views="876">
+            <div class="thumbnail-img">
+                <img src="img/pic1.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>COSMOS FLOWERS</h4>
+                <p>Tanya Vollar</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 467
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 876
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="622" data-views="827">
+            <div class="thumbnail-img">
+                <img src="img/pic2.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>TWICE</h4>
+                <p>Rhys Knight</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 622
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 827
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="472" data-views="711">
+            <div class="thumbnail-img">
+                <img src="img/pic3.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>PARIS VINTAGE</h4>
+                <p>Laref Agence</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 472
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 711
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="419" data-views="819">
+            <div class="thumbnail-img">
+                <img src="img/pic4.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>TAYLOR SWIFT EDITION</h4>
+                <p>Edwin Mendez</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 419
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 819
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="654" data-views="935">
+            <div class="thumbnail-img">
+                <img src="img/pic5.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>BLANKPINK</h4>
+                <p>Henrique Saran</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 654
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 935
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="299" data-views="400">
+            <div class="thumbnail-img">
+                <img src="img/pic6.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>ELEGANT AESTHETIC</h4>
+                <p>Honey Goyal</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 299
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 400
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="209" data-views="497">
+            <div class="thumbnail-img">
+                <img src="img/pic7.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>VOUGE VENTURE</h4>
+                <p>Sidra Mirza</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 209
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i>497
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="76" data-views="213">
+            <div class="thumbnail-img">
+                <img src="img/pic8.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>IMAGINARY SKY</h4>
+                <p>DesignGeo</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 76
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 213
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail" data-likes="165" data-views="543">
+            <div class="thumbnail-img">
+                <img src="img/pic9.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>ANIME POSTERS</h4>
+                <p>Solitude</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 165
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 543
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="244" data-views="527">
+            <div class="thumbnail-img">
+                <img src="img/pic10.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>ANIME HEADERS</h4>
+                <p>Alex Lazaris</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 244
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 527
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="399" data-views="629">
+            <div class="thumbnail-img">
+                <img src="img/pic11.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>BLUE AESTHETIC</h4>
+                <p>Jenifer Rijo</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 399
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 629
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail" data-likes="491" data-views="500">
+            <div class="thumbnail-img">
+                <img src="img/pic12.jpeg" alt="Thumbnail Image">
+            </div>
+            <div class="thumbnail-data">
+                <h4>SEVENTEEN</h4>
+                <p>Tuna Chwe</p>
+                <div class="stats">
+                    <div class="likes">
+                        <i class="fa fa-thumbs-up"></i> 491
+                    </div>
+                    <div class="views">
+                        <i class="fa fa-eye"></i> 500
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div id="imagePopup" class="popup">
+        <span class="popup-close" id="popupClose">&times;</span>
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <img class="popup-content" id="popupImg">
+        <div id="popupCaption"></div>
+    </div>
+
+    <script src="popupscript.js"></script>
+
+</body>
+
+
+</html>
